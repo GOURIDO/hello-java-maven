@@ -31,7 +31,7 @@ hello-java-maven/ ├── pom.xml └── src/ └── main/ └── jav
 
 Below is the screenshot of a successful Jenkins build showing `BUILD SUCCESS` and `Finished: SUCCESS`.
 
-![Build Success](build-success.png)
+build_success.png
 
 ## How to Run Locally
 
