@@ -47,10 +47,3 @@ mvn clean package
 4. Run the program:
 java -cp target/hello-1.0.jar HelloWorld
 
-## Tech Stack
-
-- Programming Language: Java 1.8
-- Build Tool: Apache Maven 3.8.x
-- CI/CD Tool: Jenkins LTS
-- Version Control: Git
-- Hosting: GitHub
