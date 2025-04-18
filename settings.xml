@@ -1,0 +1,7 @@
+<servers>
+    <server>
+        <id>github-repository</id>
+        <username>your-github-username</username>
+        <password>your-personal-access-token</password>
+    </server>
+</servers>
