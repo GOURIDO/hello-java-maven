@@ -1,12 +1,15 @@
 pipeline {
     agent any
     tools {
-        maven 'Maven 3.8.7'  // Use the version of Maven installed in Jenkins
+        maven 'Maven 3.8.7'  // Make sure this matches the installed Maven version in Jenkins
+    }
+    environment {
+        GITHUB_TOKEN = credentials('github-token')  // Optional if you need token authentication
     }
     stages {
         stage('Checkout') {
             steps {
-                git branch: 'main', url: 'https://github.com/GOURIDO/hello-java-maven.git'
+                git branch: 'main', url: 'https://github.com/GOURIDO/hello-java-maven.git', credentialsId: 'your-credentials-id'  // Use proper credentials if needed
             }
         }
         stage('Build') {
