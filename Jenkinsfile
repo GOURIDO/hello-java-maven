@@ -21,7 +21,7 @@ pipeline {
         }
         stage('Deploy') {
             steps {
-                sh 'mvn deploy'
+                sh 'mvn deploy -DaltDeploymentRepository=github-repository::default::https://maven.pkg.github.com/GOURIDO/hello-java-maven'
             }
         }
     }
