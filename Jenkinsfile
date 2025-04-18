@@ -6,7 +6,7 @@ pipeline {
     stages {
         stage('Checkout') {
             steps {
-                git 'https://github.com/GOURIDO/hello-java-maven.git'  // Your GitHub repo URL
+                git branch: 'main', url: 'https://github.com/GOURIDO/hello-java-maven.git'
             }
         }
         stage('Build') {
@@ -26,3 +26,4 @@ pipeline {
         }
     }
 }
+
